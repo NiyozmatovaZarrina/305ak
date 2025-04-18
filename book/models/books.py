@@ -12,8 +12,10 @@ class Book(models.Model):
         verbose_name="Provider"
         verbose_name_plural="Providers"
 
+
     def __str__(self) -> str:
         return self.name
+
 
 
 

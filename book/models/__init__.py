@@ -1,1 +1,1 @@
-from .books import books
+from .books import Book
