@@ -38,7 +38,29 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'book',
+    'drf_spectacular',
+    'rest_framework',
+   
+ #"  pip install djangorestframework"
+ # "pip install  drf_spectacular"
 ]
+REST_FRAMEWORK = {
+    
+    # YOUR SETTINGS
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.'
+    'AutoSchema',
+    
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Otziv',
+    'DESCRIPTION': 'API FOR DICKRIPTIONS',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    # OTHER SETTINGS
+    "SCHEMA_PATH_PREFIX": r'/api/v[0-9]',
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

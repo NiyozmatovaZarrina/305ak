@@ -9,6 +9,7 @@ class Book(models.Model):
     website=models.CharField("site",max_length=25)
 
     class Meta: 
+        
         verbose_name="Provider"
         verbose_name_plural="Providers"
 
